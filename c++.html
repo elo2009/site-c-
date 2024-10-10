@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>c++</title>
+</head>
+<body>
+<nav>
+    <a href="index.html">principal</a>
+    <a href="tinkercard.html">tinkercar</a>
+    <a href="c++.html">c++</a>
+    <a href="java.html">java</a>
+</nav>    
+<h1> linguagem de programação C++ </h1>
+<br>
+<p>O C++ teve grande impacto no desenvolvimento de sistemas operacionais como Windows e Linux. O C++ é uma linguagem de programação de propósito geral, criada como uma extensão da linguagem C. Sua sintaxe permite programação de alto nível e oferece controle direto sobre o hardware.</p>
+<br>
+<h1>código c++ da IDE arduino</h1>
+<br>
+<div>
+    <img src="img_código_arduino.jpg" alt="código c++ da IDE arduino">
+</div>
+<br>
+<h1> exemplo de código C++ da IDE ARDUÍNO (texto):</h1>
+<pre>// C++ code
+    //
+    int num = 0;
+    void setup()
+    {
+      pinMode(A0, INPUT);
+      Serial.begin(9600);
+      pinMode(12, OUTPUT);
+      num = 0;
+    }
+    
+    void loop()
+    {
+      num = 0;
+      num += analogRead(A0);
+      Serial.println(num);
+      if (num >= 500) {
+        digitalWrite(12, HIGH);
+      } else {
+        digitalWrite(12, LOW);
+      }
+      delay(500); // Wait for 500 millisecond(s)
+    }</pre>
+</body>
+</html>
